@@ -1,0 +1,47 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@layer{
+  .background{
+    @apply bg-[#171518];
+  }
+  .sample-text{
+    @apply text-[#fbfbfb];
+  }
+  .prime-text{
+    @apply text-[#fe0000];
+  }
+  .prime-bg{
+    @apply bg-[#fe0000];
+  }
+  .prime-bg1{
+    @apply bg-[#fe0000];
+  }
+  .prime-bg:hover{
+    @apply bg-transparent border border-white text-gray-100 box-border;
+  }
+  .border-prime{
+    @apply border-[#fe0000];
+  }
+  option{
+    @apply text-black;
+  }
+}
+@layer components{
+  .scroll-none::-webkit-scrollbar{
+    display: none;
+  }
+  *{
+    box-sizing: border-box !important;
+    font-family:"Poppins", sans-serif;
+    font-style: normal;
+  }
+  .h-none{
+    height: 0 !important;
+  }
+  .background-image{
+    background-image: url('./assets/Artboard 1@4x.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+  }
+}
